@@ -9,15 +9,20 @@ namespace AppsULove.TestGame
     public class PlayerView : MonoBehaviour
     {
         [SerializeField]
-        public float _speed = 2f;
-
-        [SerializeField]
         private CircleCollider2D _body;
 
         [Inject]
         private readonly SignalBus _signalBus;
 
         private IDisposable _moveSubscription;
+
+        private float _speed = 0f;
+
+        [Inject]
+        public void Construct(MainInstaller.Settings settings)
+        {
+            _speed = settings.PlayerSpeed;
+        }
 
         private void Start()
         {

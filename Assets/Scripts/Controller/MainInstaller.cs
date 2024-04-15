@@ -40,6 +40,7 @@ namespace AppsULove.TestGame
         [Serializable]
         public class Settings
         {
+            public float PlayerSpeed = 1f;
             public int MaxSquareCount = 5;
             public GameObject SquarePrefab;
         }

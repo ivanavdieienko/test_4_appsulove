@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: GameSettingsInstaller
   m_EditorClassIdentifier: 
   Settings:
+    PlayerSpeed: 0.98
     MaxSquareCount: 10
     SquarePrefab: {fileID: 2693905488126057025, guid: 3243b8edc2c14ee44901759a10460c2d, type: 3}
